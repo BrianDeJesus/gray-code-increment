@@ -1,4 +1,4 @@
-import argparse;
+import argparse
 from collections import deque
 
 def get_input():
