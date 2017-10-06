@@ -9,7 +9,7 @@ def get_input():
     list1 = arg.greyC
     return list1
 
-def addOne(binCode):
+def add_one(binCode):
     spot = len(binCode) - 1;
     carry = 0
     cSum = 0
@@ -36,7 +36,7 @@ def addOne(binCode):
     return list(nextBin)
 
 
-def inCrement(code):
+def increment(code):
     length = len(code)
     newBin = []   # will hold binary from grey
     nextBin = []  # will hold incremented binary
@@ -47,7 +47,7 @@ def inCrement(code):
             newBin.append('1')
         else:
             newBin.append('0')
-    nextBin = addOne(newBin)
+    nextBin = add_one(newBin)
 
     newGrey.append(nextBin[0])
     for bit in range(length-1):
@@ -61,7 +61,7 @@ def inCrement(code):
 
 def main():
     greyC = get_input()
-    result = inCrement(greyC)
+    result = increment(greyC)
     result = ''.join(map(str, result))
     print("Next grey code: ", result)
 
