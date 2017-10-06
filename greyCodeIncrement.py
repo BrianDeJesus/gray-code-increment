@@ -10,7 +10,7 @@ def get_input():
     return list1
 
 def add_one(binCode):
-    spot = len(binCode) - 1;
+    spot = len(binCode) - 1
     carry = 0
     cSum = 0
     one = [0,0,0,1]
